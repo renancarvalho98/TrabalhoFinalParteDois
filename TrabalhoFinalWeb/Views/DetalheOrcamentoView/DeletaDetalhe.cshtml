@@ -1,0 +1,23 @@
+﻿@model TrabalhoFinalWeb.Models.DetalheOrcamento
+
+@{
+    ViewBag.Title = "DeletaDetalhe";
+}
+<br /> <br/> <br /> <br/>
+<h2>Detalhe do orçamento deletado com sucesso.</h2>
+<div>
+    <hr />
+    
+    <h4>Pressione para retornar.</h4>
+
+    <br />
+
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            @Html.ActionLink("Voltar para Detalhes", "Index")
+        </div>
+    }
+</div>
